@@ -5,12 +5,20 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel='icon' href='window-system-icon.png' type='image/x-icon'/ >
 	<style>
 		
 		body {
 			width: 60vw;
 			margin: auto;
+			background-color: #00799b;
+			color: #e5fffd;
 			}
+			
+		a {
+			color: white;
+			text-decoration: none;
+		}
 			
 		nav ul  {
 			float: right;
@@ -27,6 +35,10 @@
 			font-size: 20px;
 			margin-right: 5px;
 			font-weight: strong;
+			}
+			
+		h1:hover, nav ul li:hover, footer ul li:hover {
+			color: #5bffff;
 			}
 			
 		h1 {
@@ -74,9 +86,10 @@
 			}
 			
 		i {
-			width: 10%;
+			width: 90px;
 			font-size: 90px;
 			margin: auto;
+			color: #ff9d35;
 			}
 			
 			
@@ -89,25 +102,55 @@
 			text-align: center;
 			}
 			
+		.orange {
+			color: #ff9d35;
+		}
+		
+		.free-ebook:hover {
+			color: #ffcc00;
+			}
+		
+		button {
+			color: white;
+			background-color: #ff9d35;
+			padding: 10px;
+			border: none;
+			font-size: 12pt;
+			}
+			
+		button:hover {
+			background-color: #ffcc00;
+			}
+			
+		input {
+			color: white;
+			background-color: #ff9d35;
+			font-size: 12pt;
+			}
+			
+		::placeholder {
+			color: white;
+			}
+			
 	</style>
 </head>
 
 <body>
 	<div class="heading">
-		<h1>COMPANY NAME</h1>
-		<nav>
-			<ul>
-				<li>Home</li>
-				<li>Services</li>
-				<li>Our Company</li>
-				<li>Contact Us</li>
-				<li>Free EBook</li>
-			</ul>
-		</nav>
+		<a href="#"><h1>COMPANY NAME</h1></a>
+			<nav>
+				<ul>
+					<a href="#"><li>Home</li></a>
+					<a href="#"><li>Services</li></a>
+					<a href="#"><li>Our Company</li></a>
+					<a href="#"><li>Contact Us</li></a>
+					<a href="#"><li class="orange free-ebook">Free EBook</li></a>
+				</ul>
+			</nav>
 		<img src="splash-image-placeholder.jpg" class="responsive-splash">
 	</div>
 	
-	<div class="ebook-div">
+	<div class="ebook-div orange">
 		<h2>Get Your FREE EBook Here:</h2>
 		<form>
 			<input type="text" placeholder="Enter Your Email Address">
@@ -142,7 +185,7 @@
 		</div>
 	</div>
 	
-	<div class="ebook-div">
+	<div class="ebook-div orange">
 		<h2>LAST CHANCE to Get Your FREE EBook Here:</h2>
 		<form>
 			<input type="text" placeholder="Enter Your Email Address">
@@ -152,11 +195,11 @@
 	
 	<footer>
 		<ul>
-			<li>Home</li>
-			<li>Services</li>
-			<li>Our Company</li>
-			<li>Contact Us</li>
-			<li>Free EBook</li>
+			<a href="#"><li>Home</li></a>
+			<a href="#"><li>Services</li></a>
+			<a href="#"><li>Our Company</li></a>
+			<a href="#"><li>Contact Us</li></a>
+			<a href="#"><li class="orange free-ebook">Free EBook</li></a>
 		</ul>
 	</footer>
 </body>
