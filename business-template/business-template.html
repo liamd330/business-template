@@ -37,13 +37,14 @@
 			font-weight: strong;
 			}
 			
-		h1:hover, nav ul li:hover, footer ul li:hover {
+		 nav ul li:hover, footer ul li:hover {
 			color: #5bffff;
 			}
 			
 		h1 {
 			position: relative;
 			margin-bottom: 0px;
+			color: #ff9d35;
 			}
 			
 		img {
@@ -106,7 +107,7 @@
 			color: #ff9d35;
 		}
 		
-		.free-ebook:hover {
+		h1:hover, .free-ebook:hover {
 			color: #ffcc00;
 			}
 		
@@ -116,6 +117,9 @@
 			padding: 10px;
 			border: none;
 			font-size: 12pt;
+			display: block;
+			margin: auto;
+			width: auto;
 			}
 			
 		button:hover {
@@ -152,10 +156,10 @@
 	
 	<div class="ebook-div orange">
 		<h2>Get Your FREE EBook Here:</h2>
-		<form>
-			<input type="text" placeholder="Enter Your Email Address">
+		<form method="post" action="https://webdevbasics.net/scripts/demo.php" onsubmit="return validateUpperForm()">
+			<input type="text" placeholder="Enter Your Email Address" name="upperEmailAddress" id="upperEmailAddress">
+			<button type="submit">YES, Send Me My Free EBook Right Now!</button>
 		</form>
-		<button>YES, Send Me My Free EBook Right Now!</button>
 	</div>
 	
 	<div class="customer-guarantee">
@@ -187,10 +191,10 @@
 	
 	<div class="ebook-div orange">
 		<h2>LAST CHANCE to Get Your FREE EBook Here:</h2>
-		<form>
-			<input type="text" placeholder="Enter Your Email Address">
+		<form method="post" action="https://webdevbasics.net/scripts/demo.php" onsubmit="return validateLowerForm()">
+			<input type="text" placeholder="Enter Your Email Address" name="lowerEmailAddress" id="lowerEmailAddress">
+			<button type="submit">YES, Send Me My Free EBook Right Now!</button>
 		</form>
-		<button>YES, Send Me My Free EBook Right Now!</button>
 	</div>
 	
 	<footer>
@@ -203,3 +207,35 @@
 		</ul>
 	</footer>
 </body>
+
+<script>
+
+//Regular Expression for Emails: /\w+@\w+\.\w+/
+
+	function validateUpperForm() {
+			
+		if (document.forms[0].upperEmailAddress.value == "") {
+			alert("Please enter your email address.");
+			return false;
+			}
+		if (/\w+@\w+\.\w+/.test(document.forms[0].upperEmailAddress.value) == false) {
+			alert("Please enter a valid email address.");
+			return false;
+		}
+			return true;
+		}
+		
+	function validateLowerForm() {
+			
+		if (document.forms[1].lowerEmailAddress.value == "") {
+			alert("Please enter your email address.");
+			return false;
+			}
+		if (/\w+@\w+\.\w+/.test(document.forms[1].lowerEmailAddress.value) == false) {
+			alert("Please enter a valid email address.");
+			return false;
+		}
+			return true;
+		}
+		
+</script>
