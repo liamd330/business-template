@@ -6,137 +6,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel='icon' href='window-system-icon.png' type='image/x-icon'/ >
-	<style>
-		
-		body {
-			width: 60vw;
-			margin: auto;
-			background-color: #00799b;
-			color: #e5fffd;
-			}
-			
-		a {
-			color: white;
-			text-decoration: none;
-		}
-			
-		nav ul  {
-			float: right;
-			}
-			
-		footer ul {
-			text-align: center;
-			}
-			
-		nav ul li, footer ul li {
-			list-style-type: none;
-			display: inline-block;
-			position: relative;
-			font-size: 20px;
-			margin-right: 5px;
-			font-weight: strong;
-			}
-			
-		 nav ul li:hover, footer ul li:hover {
-			color: #5bffff;
-			}
-			
-		h1 {
-			position: relative;
-			margin-bottom: 0px;
-			color: #ff9d35;
-			}
-			
-		img {
-			display: block;
-			margin: auto;
-			}
-			
-		.responsive-splash {
-			width: 100%;
-			height: auto;
-			}
-			
-		.responsive-photo {
-			width: 90%;
-			height: auto;
-			margin-top: 20px;
-			}
-			
-		.ebook-div {
-			text-align: center;
-			}
-			
-		.ebook-div input {
-			margin-bottom:20px;
-			}
-			
-		.customer-guarantee {
-			margin-top: 20px;
-			}
-			
-		.center-text {
-			text-align: center;
-			}
-			
-		video {
-			width: 50%;
-			display: block;
-			margin: auto;
-			margin-bottom: 20px;
-			}
-			
-		i {
-			width: 90px;
-			font-size: 90px;
-			margin: auto;
-			color: #ff9d35;
-			}
-			
-			
-		.product-explanation {
-			overflow: auto;
-			}
-			
-		.icon-group {
-			margin-bottom: 20px;
-			text-align: center;
-			}
-			
-		.orange {
-			color: #ff9d35;
-		}
-		
-		h1:hover, .free-ebook:hover {
-			color: #ffcc00;
-			}
-		
-		button {
-			color: white;
-			background-color: #ff9d35;
-			padding: 10px;
-			border: none;
-			font-size: 12pt;
-			display: block;
-			margin: auto;
-			width: auto;
-			}
-			
-		button:hover {
-			background-color: #ffcc00;
-			}
-			
-		input {
-			color: white;
-			background-color: #ff9d35;
-			font-size: 12pt;
-			}
-			
-		::placeholder {
-			color: white;
-			}
-			
-	</style>
+	<script src="script.js"></script>
 </head>
 
 <body>
@@ -144,11 +14,11 @@
 		<a href="#"><h1>COMPANY NAME</h1></a>
 			<nav>
 				<ul>
-					<a href="#"><li>Home</li></a>
-					<a href="#"><li>Services</li></a>
-					<a href="#"><li>Our Company</li></a>
-					<a href="#"><li>Contact Us</li></a>
-					<a href="#"><li class="orange free-ebook">Free EBook</li></a>
+					<a href="business-template.html"><li>Home</li></a>
+					<a href="services.html"><li>Services</li></a>
+					<a href="company.html"><li>Our Company</li></a>
+					<a href="contact.html"><li>Contact Us</li></a>
+					<a href="free-ebook.html"><li class="orange free-ebook">Free EBook</li></a>
 				</ul>
 			</nav>
 		<img src="splash-image-placeholder.jpg" class="responsive-splash">
@@ -199,43 +69,11 @@
 	
 	<footer>
 		<ul>
-			<a href="#"><li>Home</li></a>
-			<a href="#"><li>Services</li></a>
-			<a href="#"><li>Our Company</li></a>
-			<a href="#"><li>Contact Us</li></a>
-			<a href="#"><li class="orange free-ebook">Free EBook</li></a>
+			<a href="business-template.html"><li>Home</li></a>
+			<a href="services.html"><li>Services</li></a>
+			<a href="company.html"><li>Our Company</li></a>
+			<a href="contact.html"><li>Contact Us</li></a>
+			<a href="free-ebook.html"><li class="orange free-ebook">Free EBook</li></a>
 		</ul>
 	</footer>
 </body>
-
-<script>
-
-//Regular Expression for Emails: /\w+@\w+\.\w+/
-
-	function validateUpperForm() {
-			
-		if (document.forms[0].upperEmailAddress.value == "") {
-			alert("Please enter your email address.");
-			return false;
-			}
-		if (/\w+@\w+\.\w+/.test(document.forms[0].upperEmailAddress.value) == false) {
-			alert("Please enter a valid email address.");
-			return false;
-		}
-			return true;
-		}
-		
-	function validateLowerForm() {
-			
-		if (document.forms[1].lowerEmailAddress.value == "") {
-			alert("Please enter your email address.");
-			return false;
-			}
-		if (/\w+@\w+\.\w+/.test(document.forms[1].lowerEmailAddress.value) == false) {
-			alert("Please enter a valid email address.");
-			return false;
-		}
-			return true;
-		}
-		
-</script>
