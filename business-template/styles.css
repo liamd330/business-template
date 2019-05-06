@@ -140,10 +140,11 @@
 			background-color: #ffcc00;
 			}
 			
-		input {
+		input, textarea {
 			color: white;
 			background-color: #ff9d35;
 			font-size: 12pt;
+			margin-bottom: 10%;
 			}
 			
 		::placeholder {
@@ -164,3 +165,10 @@
 			margin-top: 4%;
 			margin-bottom: 4%;
 		}
+		
+		fieldset {
+			margin: auto;
+			width: 10%;
+			border: none;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			}

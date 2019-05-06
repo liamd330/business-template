@@ -11,7 +11,7 @@
 
 <body>
 	<div class="heading">
-		<a href="#"><h1>COMPANY NAME</h1></a>
+		<a href="business-template.html"><h1>COMPANY NAME</h1></a>
 			<nav>
 				<ul>
 					<a href="business-template.html"><li>Home</li></a>
@@ -24,9 +24,20 @@
 		<img src="splash-image-placeholder.jpg" class="responsive-splash">
 	</div>
 	
-	<div class="content">
-		<p class="white-border margin-top-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</div>
+	<form method="post" action="https://webdevbasics.net/scripts/demo.php" onsubmit="return validateMyForm()">
+		<fieldset id="f1" class="white-border margin-top-bottom">
+			<h1>Contact Us</h1>
+			<label>Name: </label><input type="text" id="myName" name="myName">
+		
+			<label>Email: </label><input type="text" id="myEmail" name="myEmail">
+			
+			<label>Phone: </label><input type="text" id="myPhone" name="myPhone" >
+		
+			<label>Comments: </label><textarea id="myComments" name="myComments" rows="5" cols="22"></textarea>
+		
+			<button type="submit">Submit</button>
+		</fieldset>
+	</form>
 	
 	<footer>
 		<ul>
